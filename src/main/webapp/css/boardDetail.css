@@ -1,0 +1,350 @@
+#headerSpace {
+    width: 100%;
+    height: 140px;
+    /* background: white; */
+}
+
+.marginSpace {
+    width: 100%;
+    height: 30px;
+}
+
+#detailMain {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#backgroundThumbnail {
+    background-image: url("../img/test.jpg");
+    /* background: rgba(0, 0, 0, 0.32); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 55% 55%;
+    height: 1000px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    top: 138px;
+}
+
+#backgroundThumbnail:before {
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 1000px;
+    background-color: #000;
+}
+
+#articleContainer {
+    position: absolute;
+    top: 35%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 12.3%, #FFFFFF 28.59%);
+    width: 100%;
+    margin: auto;
+    min-height: 1000px;
+}
+
+#articleContainer > * {
+    /* position: relative; */
+    margin: 20px auto;
+}
+
+#articleInner1{
+    margin-top: 20%;
+    /* margin-left: 18%; */
+    /* margin-right: 18%; */
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+}
+
+#articleGenre {
+    /* font-weight: bold; */
+    margin: 10px 0;
+}
+
+#articleGenre span{
+    text-shadow: #000000a1 0px 0 8px;
+    font-size: 15pt;
+    color: white;
+}
+
+#articleTitle span{
+    text-shadow: #00000066 0px 0 10px;
+    font-size: 37pt;
+    color: white;
+}
+
+#articleAuthor span, #articleDate span {
+    text-shadow: #00000061 0px 0 5px;
+    color: white;
+    font-size: large;
+}
+
+#articleTitle {
+    margin-bottom: 5px;
+}
+
+#articleInfo {
+    margin: 15px 0;
+    display: flex;
+}
+
+#articleAuthor {
+    text-align: left;
+    width: 50%;
+}
+
+#articleAuthor span:before {
+    content: 'by ';
+    color: #04BFAD;
+    font-weight: 600;
+}
+
+#articleDate {
+    text-align: right;
+    width: 50%;
+    margin-right: 15px;
+    font-style: italic;
+}
+
+#articleInner2 {
+    /* margin-left: 18%; */
+    /* margin-right: 18%; */
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    min-height: 1000px;
+}
+
+#articleContent {
+    margin: auto 0 auto 7px;
+}
+
+#articlePopularity {
+    display: flex;
+    width: 100%;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+#commentValueBox {
+	display: flex;
+	align-items: center;
+	}
+
+#commentLogo {
+    height: 30px;
+}
+
+#commentValue {
+    margin-left: 10%;
+    width: 80px;
+}
+
+#likeValueBox {
+    display: flex;
+    align-items: center;
+    /* margin: 0px 10px; */
+}
+
+#likeLogo {
+    display: grid;
+    cursor: pointer;
+}
+
+#likeValue {
+    /* margin-left: -20px; */
+    margin-left: 8%;
+    width: 80px;
+}
+
+#articleModify {
+    text-align: right;
+    font-size: medium;
+    display: inline-block;
+    /* margin-left: 60%; */
+    /* margin-bottom: 10px; */
+    /* margin-right: 15px; */
+    margin: auto 0 auto 54%;
+	width: 60%;
+}
+
+#articleModify span{
+    position: relative;
+}
+
+#articleModify span:after {
+    content: '  ';
+    background: #04bfad;
+    height: 17px;
+    width: 2px;
+    position: absolute;
+    top: 2px;
+    right: 47%;
+}
+
+.valueText {
+    color: #04BFAD;
+    font-weight: bold;
+}
+
+.modifyText {
+    /* color: #000000; */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 70%;
+}
+
+.styleHR3 {
+    background: #ffffff;
+    border-top: 3px dotted;
+    color: #e1e1e1;
+}
+
+#commentListInner {
+    width: 60%;
+    margin: auto;
+}
+
+#commentList {
+    width: 100%;
+    /* padding: 10px; */
+}
+
+td {
+    padding: 15px 0px;
+}
+
+#commentList .commentAuthorText {
+    font-weight: bold;
+}
+
+#commentList .dateText {
+    position: relative;
+    color: #aaaaaa;
+    font-size: smaller;
+    /* margin-left: 93px; */
+    font-style: italic;
+}
+
+#commentList .commentAuthorAndDate .dateText:before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    /* color: #04bfad; */
+    /* font-weight: 600; */
+    background: #04bfad;
+    border-radius: 30px;
+    position: absolute;
+    top: 7px;
+    /* display: none; */
+    left: -10%;
+}
+
+#commentList .commentModify {
+    /* width: 50%; */
+    text-align: right;
+    /* padding-right: 10px; */
+    /* display: none; */
+}
+.commentModify span {
+    font-size: small;
+    position: relative;
+}
+
+#commentList .commentModify span:after {
+    content: '  ';
+    background: #04bfad;
+    height: 15px;
+    width: 2px;
+    position: absolute;
+    top: 2px;
+    right: 46%;
+}
+
+#commentList .commentContent {
+    padding: 10px 25px 30px;
+    border-bottom: 1px #e1e1e1 solid;
+}
+
+#commentList tr:last-child td {
+    border-bottom-style: none;
+}
+
+.modifybox {
+	height: 130px
+}
+
+.commentModifyButtonBox {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#commentWriteInner {
+    width: 60%;
+    margin: 25px auto auto;
+    text-align: center;
+}
+
+#commentModifySubmit {
+	width: 100px;
+    height: 40px;
+    border-radius: 14px;
+    background: #04bfad;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+textarea {
+    width: 96%;
+    resize: none;
+    border: 1px #04bfad solid;
+    border-radius: 16px;
+    padding: 20px;
+    /* margin: 20px 20px; */
+    height: 130px;
+}
+
+#commentWriteForm {
+    height: 160px;
+}
+
+#commentWriteSubmit {
+    width: 100%;
+    height: 56px;
+    background: #04bfad;
+    color: white;
+    font-size: 13pt;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 0px 5px #cbcbcb;
+    transition: 0.3s;
+}
+
+#commentModifySubmit:hover, #commentWriteSubmit:hover {
+    background: #003857;
+}
+
+#footerSpace {
+    height: 233px;
+    margin: 0 0;
+}

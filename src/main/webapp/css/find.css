@@ -1,0 +1,146 @@
+
+body {
+    /* position: fixed; */
+    margin: 0 0;
+}
+
+#headerSpace {
+    height: 138px;
+}
+
+#footerSpace {
+    height: 233px;
+    width: 100%;
+}
+
+.marginSpace {
+    width: 100%;
+    /* height: 30px; */
+}
+
+#findMain{
+    background: url("../img/signBackground.jpg") no-repeat fixed;
+    background-size: cover;
+    /* width: 500px; */
+    background-position-x: 0;
+    min-height: 670px;
+    /* overflow: hidden; */
+    display: flex;
+    width: 100%;
+}
+
+#leftContainer {
+    width: 50%;
+}
+
+.bigTextBox {
+    margin: auto;
+    width: 80%;
+}
+
+.bigTextBox .bigText {
+    font-family: 'Nobile', sans-serif;
+    font-size: 76px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    color: rgba(255, 255, 255, 0.84);
+    text-shadow: 0 0 15px #04BFAD;
+    justify-content: flex-start;
+    margin-bottom: 0;
+}
+
+.smallTextBox {
+    width: 79%;
+    margin: auto;
+    display: flex;
+    /* text-align: center; */
+    justify-content: flex-start;
+    /* font-size: 18px; */
+}
+
+.smallTextBox .smallText {margin-top: 12px;font-size: 20px;}
+
+
+#findBoxContainer {
+    margin: 20px auto;
+    /* padding-bottom: 15px; */
+    width: 548px;
+    /* height: 80%; */
+    background: rgba(255, 255, 255, 0.83);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.09);
+    border-radius: 37px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
+}
+
+#findBoxContainer h1 {
+    font-family: 'Lora', serif;
+    color: #04bfad;
+    text-align: center;
+    margin-top: 96px;
+}
+
+#findBox {
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: -10px auto;
+    position: relative;
+    top: 2%;
+    text-align: center;
+}
+
+.inputInfoBox {
+    width: 100%;
+    height: 44px;
+    background: -webkit-linear-gradient(0deg, rgba(107, 242, 229, 0.8) 27.64%, rgba(4, 157, 191, 0.496) 99.33%);
+    background: -moz-linear-gradient(0deg, rgba(107, 242, 229, 0.8) 27.64%, rgba(4, 157, 191, 0.496) 99.33%);
+    /* position: relative; */
+    border-radius: 18px;
+    padding: 5px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.inputInfo {
+    height: 25px;
+    width: 80%;
+    margin-left: 14px;
+    background: transparent;
+    border: none;
+    font-size: 13pt;
+    color: white;
+}
+
+.inputInfo::placeholder {
+    color: rgba(0, 33, 77, 0.32);
+}
+
+a {
+    color: #04BFAD;
+}
+
+#findSubmit, #toGoLogin {
+    background: #04bfad;
+    color: white;
+    border-radius: 17px;
+    border: none;
+    margin: 57px 0;
+    width: 102%;
+    height: 72px;
+    font-size: x-large;
+    font-weight: bold;
+    box-shadow: 0 0 5px #cbcbcb;
+    -moz-box-shadow: 0 0 5px #cbcbcb;
+    letter-spacing: 5px;
+    transition: 0.3s;
+}
+
+#findSubmit:hover, #toGoLogin:hover {
+    background: #003857;
+}

@@ -1,0 +1,157 @@
+
+#headerSpace {
+    width: 100%;
+    height: 150px;
+}
+
+#footerSpace {
+    height: 233px;
+}
+
+.marginSpace {
+    width: 100%;
+    height: 30px;
+}
+
+
+#writeFormContainer {
+    width: 75%;
+    /* background-color: gray; */
+    margin : 0 auto;
+    padding : 10px;
+}
+
+h1 {
+    color: #04BFAD;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    /* width: 70%; */
+}
+
+.styleHR {
+    background: #ffffff;
+    border-top: 3px dotted;
+    color: #e1e1e1;
+}
+
+.writeItem {
+    font-size: 23px;
+    vertical-align: middle;
+    color: #04BFAD;
+    font-weight: 500;
+    /* padding-bottom: 33px; */
+}
+
+#genreInfo {
+    margin-bottom: 20px;
+}
+
+#genreInfo .genreText {
+    /* padding: 17px; */
+    /* margin-block-start: 8em; */
+    font-size: medium;
+    margin: 6px 0 6px;
+}
+
+#titleInput {
+    margin-bottom: 20px;
+}
+
+#dtitle {
+    width: 100%;
+    height: 44px;
+    /* margin: 10px; */
+    font-size: x-large;
+    border: none;
+    border-bottom: 4px #04bfad solid;
+}
+
+#thumbnailInput  {
+    color: #04bfad;
+    margin-bottom: 20px;
+}
+
+.uploadName {
+    vertical-align: middle;
+    width: 370px;
+    height: 35px;
+    border: none;
+    border-bottom: 4px #04bfad solid;
+}
+
+#thumbnailFile {
+
+}
+
+.tip {
+    color: #b2b2b2;
+}
+
+#contentInput {
+
+}
+
+#dcontent {
+    width: 99%;
+}
+
+#thumbnailInput label {
+    background: #04bfad;
+    display: inline-block;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    width: 99px;
+    height: 38px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    margin-left: 8px;
+}
+
+#thumbnailInput label:hover {
+    background: #003857;
+}
+
+#thumbnailInput input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+#thumbnailFile {
+    display: inline-block;
+    /* height: 40px; */
+    padding: 0 10px;
+    vertical-align: middle;
+    border: 1px solid #dddddd;
+    width: 78%;
+    color: #d89d9d;
+}
+
+#writeSubmit {
+    background: #04bfad;
+    color: white;
+    /* font-size: 16pt; */
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+    height: 55px;
+    font-size: x-large;
+    box-shadow: 0 0 5px #cbcbcb;
+    transition: 0.3s;
+}
+
+#writeSubmit:hover{
+    background: #003857;
+}
+

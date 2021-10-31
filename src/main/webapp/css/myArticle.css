@@ -1,0 +1,158 @@
+#myArticleListContainer {
+    margin: auto;
+}
+
+#myArticleList {
+    width: 80%;
+}
+
+td {
+}
+
+tr {
+    border: 1px #000000 solid;
+    /* margin-top: 17px; */
+}
+
+#myArticleList .tableListhead {
+    font-weight: bolder;
+    text-align: center;
+    width: 60px;
+    background: #04bfad;
+    color: white;
+    height: 35px;
+    /* padding-bottom: 8px; */
+}
+
+#myArticleList .articleNumber {
+    text-align: center;
+}
+
+#myArticleList .articleThumbnail {
+    width: 201px;
+    height: 134px;
+    overflow: hidden;
+    padding-right: 20px;
+    /* padding-bottom: 25px; */
+    /* padding-top: 25px; */
+}
+
+.articleThumbnail .thumbnail {
+    width: 100%;
+    /* height: 200px; */
+    object-fit: cover;
+}
+
+#myArticleList .articleTitle {
+    font-weight: bold;
+    font-size: 15pt;
+    height: 40px;
+    /* padding-left: 15px; */
+    /* height: 100px; */
+}
+
+#myArticleList .articleContent {
+    height: 90px;
+    font-size: 12pt;
+    /* padding-left: 15px; */
+}
+
+#myArticleList .articleDate, .articleAuthor {
+    font-size: 12pt;
+    /* display: flex; */
+}
+
+#myArticleList .articleDate {
+    height: 40px;
+    width: 18%;
+    padding-left: 17px;
+    color: #c5c5c5;
+}
+
+#myArticleList .articleCount_Left, .articleComment_Left, .articleLike_Left {
+    width: 25px;
+}
+
+#myArticleList .articleCount_Right, .articleComment_Right, .articleLike_Right {
+    width: 90px;
+    font-size: 12pt;
+}
+
+#myArticleList .valueText {
+    color: #04BFAD;
+    font-weight: bold;
+}
+
+#myArticleList .articleInfoLogo {
+    vertical-align: middle;
+}
+
+#myArticleList .articleAuthorText:before {
+    content: 'by';
+    color: #04bfad;
+    font-style: italic;
+    font-weight: 600;
+    margin-right: 3px;
+}
+
+#myArticleList .articleNumber, .articleThumbnail, .articleDate, .articleAuthor,
+.articleCount_Left, .articleComment_Left, .articleLike_Left, .articleCount_Right,
+.articleComment_Right, .articleLike_Right {
+    /* border-bottom: 1px #e5e5e5 solid; */
+    border-bottom: 1px #04bfad dashed;
+}
+
+#myArticleList #boardPage {
+    height: 71px;
+}
+
+#boardList #boardPage {
+
+}
+
+#pageValueContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#boardPage a:after {
+    height: 0px;
+}
+
+.pageValue {
+    width: 25px;
+    height: 25px;
+    /* font-size: large; */
+    display: grid;
+    place-items: center;
+    margin: 0 10px;
+}
+
+.pageValue:hover {
+    background-color: #6bf2e5;
+    border-radius: 55px;
+}
+
+.pageArrow {
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    margin: 0 10px;
+}
+
+.pageArrow img:last-child {
+    display: none;
+}
+
+.pageArrow:hover img:first-child {
+    display: none;
+}
+
+.pageArrow:hover img:last-child {
+    display: inline-block;
+}
+
+.leftArrow {transform: rotate(180deg);}

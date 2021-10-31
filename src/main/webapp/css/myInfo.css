@@ -1,0 +1,92 @@
+#myInfo {
+    display: flex;
+}
+
+#myInfoSideMenuContainer {
+    width: 245px;
+    margin-left: 220px;
+    border-right: 1px #e1e1e1 solid;
+    height: 100%;
+    position: absolute;
+}
+
+#myInfoSideMenu {
+
+}
+
+#myInfoSideMenu a:after {
+    height: 0px;
+}
+
+.item_myInfoSideMenu {
+    list-style: none;
+}
+
+.item_myInfoSideMenu li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* margin-right: 41px; */
+    border-bottom: 1px #e1e1e1 solid;
+}
+
+.item_myInfoSideMenu li:hover, .item_myInfoSideMenu .active{
+    border-right: 7px #6bf2e5 solid;
+    background: aliceblue;
+}
+
+.item_myInfoSideMenu .active:hover{
+    color: currentColor;
+}
+
+.item_myInfoSideMenu img {
+    width: 45px;
+    /* height: 45px; */
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+
+#myInfoMainContainer {
+    width: 65%;
+    position: relative;
+    left: 480px;
+}
+
+#myInfoMain {
+    margin-left: 30px;
+}
+
+#myInfoMainContent_title {
+    /* display: flex; */
+}
+
+.myInfoItemImg {
+    width: 45px;
+    height: 45px;
+    vertical-align: middle;
+    margin-block-start: -0.33em;
+    margin-block-end: 0.67em;
+    margin-right: 15px;
+}
+
+#myInfoMainContent_title h1{
+    display: inline-block;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+}
+
+#myInfoMainContainer hr {
+    width: 77%;
+    margin: 0 0 35px 0;
+}
+
+.styleHR6 {
+    /* display: inline-block; */
+    /* position: relative; */
+    /* background: #ffffff; */
+    border-top: 3px dotted;
+    color: #eaeaea;
+}

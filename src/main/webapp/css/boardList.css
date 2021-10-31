@@ -1,0 +1,348 @@
+#headerSpace {
+    height: 295px;
+}
+
+#footerSpace {
+    height: 233px;
+}
+
+.marginSpace {
+    width: 100%;
+    height: 30px;
+}
+
+
+.top {
+    margin-top: -500px;
+    opacity: 0;
+}
+
+#boardMain{
+    margin: auto;
+    max-width: 1641px;
+}
+
+#boardListTitle {
+    margin: auto;
+    text-align: center;
+}
+
+.boardListTitleText {
+    font-size: 40px;
+    background-color: #6BF2E5;
+    font-weight: bold;
+}
+
+#mainTopContainer {
+    margin: 30px auto;
+}
+
+#listPopular {
+    height: 400px;
+    display: flex;
+    margin: auto;
+    overflow: auto;
+    align-items: center;
+}
+
+#listPopular .topArticle {
+    display: flex;
+    flex-direction: column;
+    margin-block: auto;
+    margin: auto 10px;
+    width: 100%;
+    position: relative;
+}
+
+#listPopular .topArticle .thumbnailBox {
+    overflow: hidden;
+    max-width: 330px;
+    max-height: 220px;
+    margin: auto;
+}
+
+#listPopular .topArticle .thumbnailBox .thumbnail {
+    width: 100%;
+    object-fit: cover;
+}
+
+#listPopular .contentBox {
+    background-color: white;
+    text-align: center;
+    margin: auto 20px;
+}
+
+#listPopular .article {
+    display: flex;
+    flex-direction: column;
+    /* margin-block: auto; */
+    width: 65%;
+    /* height: 100%; */
+    margin: auto 10px;
+    /* position: relative; */
+}
+
+#listPopular .article .thumbnailBox {
+    overflow: hidden;
+    max-width: 300px;
+    max-height: 200px;
+    margin: 10px auto;
+}
+
+#listPopular .article .thumbnailBox .thumbnail {
+    width: 100%;
+    object-fit: cover;
+}
+
+.marginBar {
+    width: 85%;
+    height: 20px;
+    margin: 30px auto 0 auto;
+    /* border: 3px #e1e1e1 dashed; */
+    /* z-index: 2; */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 70%;
+    /* position: relative; */
+    /* display: inline-block; */
+    /* margin: 30px auto; */
+}
+
+.styleHR2 {
+    /* display: inline-block; */
+    /* position: relative; */
+    background: #ffffff;
+    border-top: 3px dotted;
+    color: #e1e1e1;
+}
+
+#mainTopContainer #searchBarBox {
+    margin: auto auto;
+    height: 80px;
+    width: 50%;
+    display: flex;
+    text-align: center;
+}
+
+#searchColumn {
+    width: 21%;
+    margin: 0 0 0 17px;
+    padding: 15px;
+    background: url('../img/down.png') no-repeat 95%;
+    color: #04BFAD;
+    font-weight: 500;
+    border: none;
+    -webkit-appearance: none; /* 네이티브 형태 가리기 */
+    -moz-appearance: none;
+    font-size: 18pt;
+}
+
+#searchBar {
+    width: 90%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin: auto;
+    height: 64px;
+    background: -webkit-linear-gradient(0deg, rgba(107, 242, 229, 0.8) 27.64%, rgba(4, 157, 191, 0.496) 99.33%);
+    background: -moz-linear-gradient(0deg, rgba(107, 242, 229, 0.8) 27.64%, rgba(4, 157, 191, 0.496) 99.33%);
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(20 43 25, 0.22);
+    /* border-radius: 51px; */
+}
+
+
+#searchBar .formSearch {
+    display: contents;
+}
+
+#searchWord {
+    width: 65%;
+    margin: 0 25px;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+#searchSubmit {
+    border-radius: 0 20px 20px 0;
+    width: 15%;
+    background: #04BFAD;
+    border: none;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+#searchSubmit:hover {
+    background: #003857;
+}
+
+#boardListContainer {
+    margin: auto;
+}
+
+#boardList {
+    width: 80%;
+    margin: auto;
+    /* border: 1px black solid; */
+}
+
+td {
+    /* border: 1px #000000 solid; */
+    /* margin: auto; */
+}
+
+tr {
+    border: 1px #000000 solid;
+}
+
+#boardList .articleThumbnail {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.articleThumbnail .thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#boardList .articleTitle {
+    font-weight: bold;
+    font-size: 20pt;
+    /* padding-left: 15px; */
+    /* height: 100px; */
+}
+
+#boardList .articleContent {
+    height: 132px;
+    font-size: 14pt;
+    /* padding-left: 15px; */
+}
+
+#boardList .articleDate, .articleAuthor {
+    font-size: 12pt;
+    /* display: flex; */
+}
+
+#boardList .articleDate {
+    height: 40px;
+    width: 18%;
+    padding-left: 17px;
+    color: #c5c5c5;
+}
+
+#boardList .articleCount_Left, .articleComment_Left, .articleLike_Left {
+    width: 25px;
+}
+
+#boardList .articleCount_Right, .articleComment_Right, .articleLike_Right {
+    width: 90px;
+    font-size: 12pt;
+}
+
+#boardList .valueText {
+    color: #04BFAD;
+    font-weight: bold;
+}
+
+#boardList .articleInfoLogo {
+    vertical-align: middle;
+}
+
+#boardList .articleAuthorText:before {
+    content: 'by';
+    color: #04bfad;
+    font-style: italic;
+    font-weight: 600;
+    margin-right: 3px;
+}
+
+#boardList .articleThumbnail, .articleDate, .articleAuthor,
+.articleCount_Left, .articleComment_Left, .articleLike_Left, .articleCount_Right,
+.articleComment_Right, .articleLike_Right {
+    /* border-bottom: 1px #e5e5e5 solid; */
+    border-bottom: 2px #e5e5e5 dashed;
+}
+
+#boardList #boardPage {
+
+}
+
+#pageValueContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	}
+	
+#boardPage a:after {
+    height: 0px;
+}
+
+.pageValue {
+    width: 45px;
+    height: 45px;
+    font-size: x-large;
+    display: grid;
+    place-items: center;
+    margin: 0 10px;
+}
+
+.pageValue:hover {
+    background-color: #6bf2e5;
+    border-radius: 55px;
+}
+
+.pageArrow {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    margin: 0 10px;
+}
+
+.pageArrow img:last-child {
+    display: none;
+}
+
+.pageArrow:hover img:first-child {
+    display: none;
+}
+
+.pageArrow:hover img:last-child {
+    display: inline-block;
+}
+
+.leftArrow {transform: rotate(180deg);}
+
+#boardList #toBoardWrite {
+    text-align: right;
+    padding: 12px 0;
+}
+
+#WriteButton {
+    background: #04bfad;
+    width: 140px;
+    height: 51px;
+    border-radius: 21px;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0px 0px 5px #cbcbcb;
+    transition: 0.3s;
+}
+
+#WriteButton:hover {
+    background: #003857;
+}

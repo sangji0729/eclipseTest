@@ -1,0 +1,497 @@
+#header, #header2 {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+#header a:after, #header2 a:after, #sideMenuContainer a:after {
+    height: 0;
+}
+
+#header2{
+    background-color: #003857;
+    width:100%;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: top 0.25s;
+    z-index: 1;
+}
+#title2{
+    height: 70px;
+    /* width: 246px; */
+    margin: auto;
+}
+
+#mainMenuContainer2{
+    width: 84%;
+    height: 55px;
+    font-size: 15pt;
+    font-weight: bold;
+    color: #04BFAD;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.mainMenuInner2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#mainMenuSpace2 {
+    display: flex;
+    text-align: center;
+    width: 80%;
+    margin: auto auto;
+    background-color: transparent;
+}
+
+#mainMenuSpace2 .mainMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 122px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+#mainMenuSpace2 .mainMenu:hover{
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-name: mainMenuAnimation2;
+}
+@keyframes mainMenuAnimation2 {
+    0% {
+        border: 1px solid #6BF2E5;
+        border-radius: 15px;
+        /* border-left: 7px solid #6BF2E5; */
+    }
+    100% {
+        /* border-bottom: 7px solid #6BF2E5; */
+        border-radius: 32px;
+        background: #6bf2e5;
+        color: #FFFFFF;
+    }
+}
+
+/* 사이드 매뉴 */
+#sideMenuSpace {
+    position: fixed;
+    top: 90%;
+    width: 60px;
+    height: 60px;
+    background: #003857;
+    display: grid;
+    place-items: center;
+    border-radius: 50px;
+    /* border: 3px #6bf2e5 solid; */
+    box-shadow: 0 0 5px #00000040;
+    transition: 0.3s;
+    z-index: 3;
+    left: 15px;
+}
+
+#sideMenuSpace:hover{
+    background: #04BFAD;
+}
+
+#sideMenuButton, #sideMenuButton_X {
+    margin: auto;
+    height: 42px;
+    width: 42px;
+    background-size: 42px;
+    transition: 0.3s;
+    position: absolute;
+    left: 9px;
+    top: 8px;
+    opacity: 0;
+}
+
+#sideMenuButton {
+    background: url('../img/sidemenu3.png') center/cover no-repeat;
+}
+
+#sideMenuButton:hover {
+    background-image: url('../img/sidemenu4.png');
+}
+
+#sideMenuButton_X {
+    background: url('../img/close1.png') center/cover no-repeat;
+}
+
+#sideMenuSpace.visible {
+    box-shadow: none;
+    background: #04BFAD;
+}
+
+#sideMenuButton {
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: 0.25s;
+    animation-timing-function: ease-in;
+    animation-name: sideMenuButtonAnimation1;
+}
+@keyframes sideMenuButtonAnimation1 {
+    from {
+        background-size: 0;
+        opacity: inherit;
+    }
+    to {
+        background-size: 42px;
+        opacity: 1;
+    }
+}
+
+#sideMenuButton.visible {
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-name: sideMenuButtonAnimation2;
+}
+@keyframes sideMenuButtonAnimation2 {
+    from {
+        background-size: 42px;
+        opacity: 1;
+    }
+    to {
+        background-size: 0;
+        opacity: 0;
+    }
+}
+
+#sideMenuButton_X {
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-name: sideMenuButtonXAnimation1;
+}
+@keyframes sideMenuButtonXAnimation1 {
+    from {
+        background-size: 42px;
+        opacity: inherit;
+    }
+    to {
+        background-size: 0;
+        opacity: 0;
+    }
+}
+
+#sideMenuButton_X.visible {
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: 0.25s;
+    animation-timing-function: ease-in;
+    animation-name: sideMenuButtonXAnimation2;
+}
+@keyframes sideMenuButtonXAnimation2 {
+    from {
+        background-size: 0;
+        opacity: 0;
+    }
+    to {
+        background-size: 42px;
+        opacity: 1;
+    }
+}
+
+#sideMenu {
+    width: 220px;
+    height: 100%;
+    background: #04BFAD;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    z-index: 2;
+    overflow: auto;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 84%;
+    margin-left: 10px;
+    /* position: relative; */
+    /* display: inline-block; */
+    /* margin: 30px auto; */
+}
+
+.styleHR {
+    /* display: inline-block; */
+    /* position: relative; */
+    /* background: #ffffff; */
+    border-top: 4px dotted;
+    color: #ffffff54;
+}
+
+#loginStatusContainer {
+    /* margin-top: 10px; */
+    margin-left: 20px;
+}
+
+#loginStatus {
+    color: white;
+    font-size: 15pt;
+    /* margin-left: 10px; */
+    font-weight: 600;
+}
+
+#loginMenu {
+    color: white;
+    font-size: large;
+}
+
+.marginBar {
+    margin: 18px 0;
+}
+
+#sideMenuContainer,
+#sideMenuContainer ul,
+#sideMenuContainer ul li,
+#sideMenuContainer ul li a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#sideMenuContainer {
+    width: 220px;
+    color: #ffffff;
+}
+
+#sideMenuContainer ul ul {
+    display: none;
+}
+
+#sideMenuContainer > ul > li.active > ul {
+    display: block;
+}
+
+.align-right {
+    float: right;
+}
+
+#sideMenuContainer > ul > li > a {
+    padding: 16px 22px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    background: #04bfad;
+    transition: color .2s ease;
+}
+
+#sideMenuContainer > ul > li > a:hover {
+    color: #6bf2e5;
+}
+
+#sideMenuContainer ul > li.sideMenuItem > a:after {
+    content: '';
+    position: absolute;
+    right: 26px;
+    top: 19px;
+    z-index: 5;
+    display: block;
+    height: 10px;
+    width: 2px;
+    background: rgba(4, 191, 173, 0);
+    transition: all 0.1s ease-out;
+}
+
+#sideMenuContainer ul > li.sideMenuItem > a:before {
+    position: absolute;
+    right: 22px;
+    top: 23px;
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: rgba(4, 191, 173, 0);
+    content: "";
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+#sideMenuContainer ul > li.sideMenuItem.open > a:after,
+#sideMenuContainer ul > li.sideMenuItem.open > a:before {
+    transform: rotate(45deg);
+}
+
+#sideMenuContainer ul ul li a {
+    padding: 14px 22px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 14px;
+    text-decoration: none;
+    color: #d7d7d7;
+    background: hsl(174, 95%, 35%);
+    transition: color .2s ease;
+}
+
+#sideMenuContainer ul ul ul li a {
+    padding-left: 32px;
+}
+
+#sideMenuContainer ul ul li a:hover {
+    color: #ffffff;
+}
+
+
+
+/*       myInfo-Entrance       */
+
+
+#myInfoEntrance {
+    display: none;
+    position: initial;
+    z-index: 5;
+}
+
+#myInfoEntrance:before {
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    z-index: 5;
+}
+
+#myInfoEntranceContainer {
+    margin: -84px 36%;
+    position: absolute;
+    width: 548px;
+    height: 500px;
+    background: rgb(255 255 255);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.54);
+    border-radius: 37px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
+    z-index: 6;
+}
+
+#myInfoEntranceBox {
+    width: 70%;
+    /* height: 100%; */
+    padding: 10px;
+    border-radius: 20px;
+    margin: -10px auto;
+    position: relative;
+    top: 17%;
+    text-align: center;
+    /* z-index: 0; */
+}
+
+#myInfoEntranceBox a:after {
+    height: 0;
+}
+
+.XButtonSpace {
+    /* margin: auto; */
+    height: 42px;
+    width: 42px;
+    background-size: 42px;
+    /* transition: 0.3s; */
+    position: absolute;
+    left: 412px;
+    top: -49px;
+    /* opacity: 0; */
+    /* z-index: 3; */
+}
+
+.Button_X {
+    background: url('../img/close2.png') center/cover no-repeat;
+    height: 42px;
+}
+
+.Button_X:hover {
+    background: url('../img/close4.png') center/cover no-repeat;
+}
+
+#myInfoEntranceBox h1 {
+    font-family: 'Lora', serif;
+    color: #04bfad;
+    text-align: center;
+    /* margin-top: 25px; */
+    margin: 0;
+}
+
+#myInfoEntranceBox h4 {
+    margin-bottom: 50px;
+}
+
+
+#inputPWBox {
+    width: 100%;
+    height: 50px;
+    background: -webkit-linear-gradient(0deg, rgba(107, 242, 229, 0.8) 27.64%, rgba(4, 157, 191, 0.496) 99.33%);
+    background: -moz-linear-gradient(0deg, rgba(107, 242, 229, 0.8) 27.64%, rgba(4, 157, 191, 0.496) 99.33%);
+    /* position: relative; */
+    border-radius: 18px;
+    padding: 5px;
+    /* margin: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#PWlogoSpace {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    /* padding: 20px; */
+    /* left: 100px; */
+    margin: 0 13px;
+}
+
+#inputPW {
+    height: 25px;
+    width: 80%;
+    background: transparent;
+    border: none;
+    font-size: 14pt;
+    color: white;
+}
+
+#inputPW::placeholder {
+    color: rgba(0, 33, 77, 0.32);
+}
+
+
+#myInfoEnterSubmit {
+    background: #04bfad;
+    color: white;
+    border-radius: 17px;
+    border: none;
+    margin: 47px 0;
+    width: 102%;
+    height: 78px;
+    font-size: x-large;
+    font-weight: bold;
+    box-shadow: 0 0 5px #cbcbcb;
+    -moz-box-shadow: 0 0 5px #cbcbcb;
+    letter-spacing: 5px;
+    transition: 0.3s;
+}
+
+#myInfoEnterSubmit:hover{
+    background: #003857;
+}
